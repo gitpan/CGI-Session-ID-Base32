@@ -4,7 +4,10 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'		=> 'CGI::Session::ID::Base32',
     'VERSION_FROM'	=> 'Base32.pm', # finds $VERSION
-    'PREREQ_PM'		=> {qw( MIME::Base32 CGI::Session )}, # e.g., Module::Name => 1.1
+    'PREREQ_PM'		=> { # e.g., Module::Name => 1.1
+		MIME::Base32  => 1.01,
+		CGI::Session  => 0,
+	}, 
     ($] >= 5.005 ? (
       # ABSTRACT_FROM => 'Base32.pm', 
       AUTHOR     => 'Daniel Peder <Daniel.Peder@infoset.com>',
