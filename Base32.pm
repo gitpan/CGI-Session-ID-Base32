@@ -1,13 +1,13 @@
 package CGI::Session::ID::Base32;
 
-# $Id: Base32.pm_rev 1.4 2003/12/11 13:40:10 root Exp root $
+# $Id: Base32.pm_rev 1.5 2003/12/11 16:31:09 root Exp root $
 
 use strict;
 use MIME::Base32 qw( 09AV );
 
 use vars qw( $VERSION );
 
-	$VERSION = '1.00';
+	$VERSION = '1.01';
 
 sub generate_id {
     my $self = shift;
